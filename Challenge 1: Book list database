@@ -1,0 +1,12 @@
+/** List of books:
+Atomic habits (4)
+Think and grow rich (5)
+Rich dad poor dad (5) 
+Your best year ever (4)
+**/
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER); 
+INSERT INTO books VALUES (1, "Atomic habits", 4);
+INSERT INTO books VALUES (2, "Think and grow rich",5);
+INSERT INTO books VALUES (3, "Rich dad poor dad",5);
+SELECT * FROM books;
