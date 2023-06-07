@@ -1,4 +1,4 @@
-CREATE TABLE persons (
+CREATE TABLE persons ( 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fullname TEXT,
     age INTEGER);
