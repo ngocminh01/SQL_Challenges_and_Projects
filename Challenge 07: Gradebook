@@ -1,4 +1,3 @@
-
 CREATE TABLE student_grades (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
