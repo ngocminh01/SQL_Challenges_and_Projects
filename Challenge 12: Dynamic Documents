@@ -1,4 +1,4 @@
-CREATE table documents (
+CREATE table documents ( 
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     content TEXT,
