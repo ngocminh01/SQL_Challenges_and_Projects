@@ -1,0 +1,33 @@
+/* Create table about the people and what they do here */
+CREATE TABLE movie_stars 
+(id INTEGER PRIMARY KEY, name TEXT, movie TEXT, married_to TEXT);
+
+INSERT INTO movie_stars VALUES ("1","Brad Pitt","Fight Club","Angelina Jolie");
+INSERT INTO movie_stars VALUES ("2","Angelina Jolie","Maleficent","Brad Pitt");
+INSERT INTO movie_stars VALUES ("3","Leonardo DiCaprio","Titanic",NULL);
+INSERT INTO movie_stars VALUES ("4","Tom Hanks","Saving Private Ryan","Rita Wilson");
+INSERT INTO movie_stars VALUES ("5","Jennifer Lawrence","The Hunger Games",NULL);
+INSERT INTO movie_stars VALUES ("6","Meryl Streep","The Devil Wears Prada","Don Gummer");
+INSERT INTO movie_stars VALUES ("7","Julia Roberts", "Pretty Woman", "Danny Moder");
+INSERT INTO movie_stars VALUES ("8","Scarlett Johansson","Avengers series","Ryan Reynolds");
+INSERT INTO movie_stars VALUES ("9","Charlize Theron","Atomic Blonde",NULL);
+
+CREATE TABLE charity 
+(id INTEGER PRIMARY KEY, movie_star_id INTEGER, organization TEXT);
+
+INSERT INTO charity VALUES ("1","1","Make It Right Foundation");
+INSERT INTO charity VALUES ("2","3","Leonardo DiCaprio Foundation");
+INSERT INTO charity VALUES ("3","5","Jennifer Lawrence Foundation");
+INSERT INTO charity VALUES ("4","2","Maddox Jolie-Pitt Foundation");
+INSERT INTO charity VALUES ("5","4","Stand Up To Cancer");
+INSERT INTO charity VALUES ("6","8","Child Mind Institute");
+INSERT INTO charity VALUES ("7","7","UNICEF");
+
+SELECT name, movie, married_to, organization FROM movie_stars
+JOIN charity
+ON movie_stars.id=charity.movie_star_id;
+
+SELECT movie_stars.name, charity.organization 
+FROM movie_stars  
+LEFT OUTER JOIN charity
+ON movie_stars.id=charity.movie_star_id;
