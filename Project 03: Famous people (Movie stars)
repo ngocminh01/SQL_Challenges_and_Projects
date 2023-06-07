@@ -1,4 +1,4 @@
-/* Create table about the people and what they do here */
+/* Create table about the people and what they do here */ 
 CREATE TABLE movie_stars 
 (id INTEGER PRIMARY KEY, name TEXT, movie TEXT, married_to TEXT);
 
