@@ -1,6 +1,6 @@
 CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, size TEXT, quantity INTEGER, price INTEGER);
 INSERT INTO store VALUES (1,"Shirt","Pink","S",15,5000);
-INSERT INTO store VALUES (2,"Shirt","Black","M",25,4500);
+INSERT INTO store VALUES (2,"Shirt","Black","M",25,4500); 
 INSERT INTO store VALUES (3,"Skirt","White","L",20,4000);
 INSERT INTO store VALUES (4,"Pants","Blue","M",5,6000);
 INSERT INTO store VALUES (5,"Socks","White","L",10,2000);
