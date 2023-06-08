@@ -1,0 +1,19 @@
+/* A social media app called "Facebook" that allows users to post updates */
+CREATE TABLE posts (post_id INTEGER PRIMARY KEY, user_id INTEGER, post_content TEXT);
+INSERT INTO posts VALUES (1,1432, "Happy moment with my family and friends.");
+INSERT INTO posts VALUES (2,1726, "This is my first post in Facebook!");
+INSERT INTO posts VALUES (3,5829, "Interested in the new features of Facebook.");
+INSERT INTO posts VALUES (4,2957, "Just finished reading an amazing book. Highly recommended!");
+INSERT INTO posts VALUES (5,1432, "Feeling grateful for all the love from my friends.");
+INSERT INTO posts VALUES (6,0820, "Excited to start a new project.");
+INSERT INTO posts VALUES (7,8932, "Enjoying a beautiful sunset at the beach.");
+INSERT INTO posts VALUES (8,4592," Had a great workout session today. Feeling energized!");
+
+SELECT * FROM posts;
+UPDATE posts 
+    SET post_content = "This is my third post in Facebook!"
+    WHERE post_id = 2;
+SELECT * FROM posts;
+
+DELETE FROM posts WHERE post_id = 8;
+SELECT * FROM posts;
